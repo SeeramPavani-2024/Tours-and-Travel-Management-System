@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Tour</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Book a Tour</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="packages.html">Tour Packages</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="booking-form">
+        <form action="book.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="package">Select Package:</label>
+            <select id="package" name="package">
+                <option value="paris">Paris City Tour</option>
+                <option value="bali">Bali Beach Holiday</option>
+            </select>
+            
+            <label for="date">Travel Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <button type="submit" class="btn" name="REQUEST_METHOD">Submit Booking</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Travel Agency. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
